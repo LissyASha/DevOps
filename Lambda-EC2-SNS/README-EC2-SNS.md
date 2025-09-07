@@ -1,4 +1,4 @@
-# Assignment4
+# Assignment 4
 
 **Monitor EC2 Instance State Changes Using AWS Lambda, Boto3, and SNS**
 

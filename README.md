@@ -11,7 +11,7 @@
 
   <img width="452" height="254" alt="Ec2 Instance1_AutoStop" src="https://github.com/user-attachments/assets/3a32cdcc-e76d-47e1-bf20-d2636f54afe0" />
 
-** Create a new I AM role for Lambda.**
+**Create a new I AM role for Lambda**
    - Attached the AmazonEC2FullAccess` policy to this role.
 
   <img width="452" height="254" alt="IAM Role_Lambda" src="https://github.com/user-attachments/assets/5eaf9565-eea0-4571-8fc1-7bbf9c04350a" />
@@ -19,10 +19,12 @@
 **Create a Lambda Function with necessary permissions to describe, stop, and start EC2 instances.**
 
   <img width="452" height="254" alt="Lambda_Funtion " src="https://github.com/user-attachments/assets/e5b7a9ef-4b5b-470a-84c6-f1cbab855877" />
+
+  
 **Python Code With Ouput**
 import json
 import boto3
-# Create EC2 client
+**--Create EC2 client**
 ec2_client = boto3.client('ec2', region_name='ca-central-1')  # Change region if needed
 def lambda_handler(event, context):
     # Filter for instances with Auto-Stop or Auto-Start tags
@@ -41,19 +43,19 @@ def lambda_handler(event, context):
             state = instance['State']['Name']
             tags = {tag['Key']: tag['Value'] for tag in instance.get('Tags', [])}
 
- # If instance has Auto-Start tag and is stopped → start it
+ **--If instance has Auto-Start tag and is stopped → start it**
             if tags.get("Action") == "Auto-Start" and state == "stopped":
                 print(f"Starting instance {instance_id}...")
                 ec2_client.start_instances(InstanceIds=[instance_id])
                 affected_instances.append({"InstanceId": instance_id, "ActionTaken": "Started"})
 
-   # If instance has Auto-Stop tag and is running → stop it
+  **--If instance has Auto-Stop tag and is running → stop it**
             elif tags.get("Action") == "Auto-Stop" and state == "running":
                 print(f"Stopping instance {instance_id}...")
                 ec2_client.stop_instances(InstanceIds=[instance_id])
                 affected_instances.append({"InstanceId": instance_id, "ActionTaken": "Stopped"})
 
-    # Print/log affected instances
+  **--Print/log affected instances**
     if affected_instances:
         print("Affected Instances:")
         for entry in affected_instances:
@@ -82,6 +84,8 @@ REPORT RequestId: eb4d5c34-ceb8-4093-ac17-b16bb88e2bc7	Duration: 1254.72 ms	Bill
 
 Request ID: eb4d5c34-ceb8-4093-ac17-b16bb88e2bc7
 
+
   <img width="452" height="254" alt="TestLog" src="https://github.com/user-attachments/assets/ed8a52bb-0757-492e-8c31-fd0ca63354f7" />
+  
   
   <img width="452" height="254" alt="AfterLambdaFunctionTriggered" src="https://github.com/user-attachments/assets/0b806fb2-6c82-418e-a6e0-e7ccb36a078a" />

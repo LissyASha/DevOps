@@ -22,13 +22,10 @@
 
 **Subscription Confirmation via Email**
   
-    <img width="953" height="497" alt="Subscription_Mail_Confirmation" src="https://github.com/user-attachments/assets/9827657b-f696-42c6-a422-f0a571388aea" />
-
-    
-    <img width="960" height="540" alt="Subscription_Confirmation" src="https://github.com/user-attachments/assets/2e327dc6-a9f1-4876-b73a-18ab5414ea1b" />
-    
-
-
+  <img width="953" height="497" alt="Subscription_Mail_Confirmation" src="https://github.com/user-attachments/assets/9827657b-f696-42c6-a422-f0a571388aea" />  
+  
+  <img width="960" height="540" alt="Subscription_Confirmation" src="https://github.com/user-attachments/assets/2e327dc6-a9f1-4876-b73a-18ab5414ea1b" />
+  
 **Created a Lambda Function with name EC2StateChangeMonitor and attached the role LambdaEC2MonitorRole.**
 
   

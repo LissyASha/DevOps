@@ -60,4 +60,4 @@
   
 **CloudWatch Log**
 
-    <img width="949" height="481" alt="CloudWatch_Log" src="https://github.com/user-attachments/assets/312268db-7ad2-4b96-a330-326c5e3e5bc8" />
+<img width="949" height="481" alt="CloudWatch_Log" src="https://github.com/user-attachments/assets/312268db-7ad2-4b96-a330-326c5e3e5bc8" />

@@ -45,30 +45,19 @@
     -Event type: EC2 Instance State-change Notification.
     -Add target → Selected the Lambda function **EC2StateChangeMonitor**.
 
-    
-      <img width="955" height="479" alt="EC2StateChangeRule-Lissy_TargetLambdaFunctionAdded" src="https://github.com/user-attachments/assets/96357a24-6a9e-4d44-a21d-c8de9de636c0" />
-
+  <img width="955" height="479" alt="EC2StateChangeRule-Lissy_TargetLambdaFunctionAdded" src="https://github.com/user-attachments/assets/96357a24-6a9e-4d44-a21d-c8de9de636c0" />
 
 **To trigger the Lambda function, I have changed the state of an EC2 instance to Stop** 
     
     <img width="863" height="471" alt="Stopping EC2Instance to Trigger Event" src="https://github.com/user-attachments/assets/639d80f4-7662-4ded-96ff-dc4652712d5d" />
-
+    
 **Outcome**
     -EventBridge detects EC2 state changes.
     -Lambda processes the event and sends messages.
     -SNS notifies the receiver via email.
 
-    <img width="947" height="490" alt="SNS - Email Notification Received Once EC2 State Changes" src="https://github.com/user-attachments/assets/ffc6a56d-c839-422d-abb8-1f8c887e7924" />
-
-
+  <img width="947" height="490" alt="SNS - Email Notification Received Once EC2 State Changes" src="https://github.com/user-attachments/assets/ffc6a56d-c839-422d-abb8-1f8c887e7924" />
+  
 **CloudWatch Log**
 
-    
     <img width="949" height="481" alt="CloudWatch_Log" src="https://github.com/user-attachments/assets/312268db-7ad2-4b96-a330-326c5e3e5bc8" />
-
-
-
-
-
-
-

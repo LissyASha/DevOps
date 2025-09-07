@@ -5,4 +5,4 @@
 
 -[Assignment 3: Auto-Tagging EC2 Instances on Launch Using AWS Lambda and Boto3](AutoTag-EC2-Lambda/README-AutoTag-EC2.md)
 
--[Assignment 4: Monitor EC2 Instance State Changes Using AWS Lambda, Boto3, and SNS](AutoTag-EC2-Lambda/README-AutoTag-EC2.md)
+-[Assignment 4: Monitor EC2 Instance State Changes Using AWS Lambda, Boto3, and SNS](Lambda-EC2-SNS/README-EC2-SNS.md)

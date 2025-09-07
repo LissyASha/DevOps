@@ -44,4 +44,5 @@ Request ID: eb4d5c34-ceb8-4093-ac17-b16bb88e2bc7
   
   
     
-    <img width="452" height="254" alt="AfterLambdaFunctionTriggered" src="https://github.com/user-attachments/assets/0b806fb2-6c82-418e-a6e0-e7ccb36a078a" />
+  <img width="452" height="254" alt="AfterLambdaFunctionTriggered" src="https://github.com/user-attachments/assets/2a84da03-de4e-4c61-a469-a12b376cd0cf" />
+

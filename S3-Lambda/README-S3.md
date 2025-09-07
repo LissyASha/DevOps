@@ -1,7 +1,7 @@
 # Assignment2
 **Created an S3 Bucket and uploaded a few files on the back date.**
 
-<img width="452" height="254" alt="S3Bucket_WitholdFiles" src="https://github.com/user-attachments/assets/8879644b-90aa-422e-a471-fb8fd8b80164" />
+<img width="936" height="441" alt="S3Bucket_WitholdFiles" src="https://github.com/user-attachments/assets/8879644b-90aa-422e-a471-fb8fd8b80164" />
 
 **Created a new I AM role for Lambda and attached the `AmazonS3FullAccess` policy to this role**
   
@@ -12,22 +12,22 @@
 
 
 
-<img width="452" height="254" alt="S3_Cleanup_LambdaFunction" src="https://github.com/user-attachments/assets/8bf5de72-f295-4706-8628-2d666d73b685" />
+<img width="936" height="441" alt="S3_Cleanup_LambdaFunction" src="https://github.com/user-attachments/assets/8bf5de72-f295-4706-8628-2d666d73b685" />
 
 
 **Triggered the Lambda function manually and added the screenshots with logs**
 
 
-<img width="452" height="254" alt="Log" src="https://github.com/user-attachments/assets/5e8a9f33-33da-4389-9c64-71d4c394145f" />
+<img width="936" height="441" alt="Log" src="https://github.com/user-attachments/assets/5e8a9f33-33da-4389-9c64-71d4c394145f" />
 
 
 
-<img width="452" height="254" alt="CloudWatch_Log" src="https://github.com/user-attachments/assets/5d1339f5-ee40-480f-afa6-76ed90799795" />
+<img width="936" height="441" alt="CloudWatch_Log" src="https://github.com/user-attachments/assets/5d1339f5-ee40-480f-afa6-76ed90799795" />
 
 
 **After deleting the older files >30 days, the S3 bucket contains only the recently uploaded files**
 
-<img width="452" height="254" alt="S3Bucket_DeletedOldFiles" src="https://github.com/user-attachments/assets/d83c491d-1f18-4e6c-845e-a2e01e1fa915" />
+<img width="936" height="441" alt="S3Bucket_DeletedOldFiles" src="https://github.com/user-attachments/assets/d83c491d-1f18-4e6c-845e-a2e01e1fa915" />
 
 
 

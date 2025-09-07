@@ -48,8 +48,8 @@
   <img width="955" height="479" alt="EC2StateChangeRule-Lissy_TargetLambdaFunctionAdded" src="https://github.com/user-attachments/assets/96357a24-6a9e-4d44-a21d-c8de9de636c0" />
 
 **To trigger the Lambda function, I have changed the state of an EC2 instance to Stop** 
-    
-    <img width="863" height="471" alt="Stopping EC2Instance to Trigger Event" src="https://github.com/user-attachments/assets/639d80f4-7662-4ded-96ff-dc4652712d5d" />
+
+<img width="863" height="471" alt="Stopping EC2Instance to Trigger Event" src="https://github.com/user-attachments/assets/639d80f4-7662-4ded-96ff-dc4652712d5d" />
     
 **Outcome**
     -EventBridge detects EC2 state changes.

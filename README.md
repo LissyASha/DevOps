@@ -25,10 +25,8 @@
 
 import json
 import boto3
-
 --Create EC2 client
 ec2_client = boto3.client('ec2', region_name='ca-central-1')  # Change region if needed
-
 def lambda_handler(event, context):
     --Filter for instances with Auto-Stop or Auto-Start tags
     filters = [
@@ -37,7 +35,6 @@ def lambda_handler(event, context):
             'Values': ['Auto-Start', 'Auto-Stop']
         }
     ]
-
     response = ec2_client.describe_instances(Filters=filters)
     affected_instances = []
 

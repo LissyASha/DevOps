@@ -52,3 +52,5 @@ def lambda_handler(event, context):
     msg = {"taggedInstances": instance_ids, "tags": tags, "region": region}
     print("Tagging complete:", json.dumps(msg))
     return msg
+
+
